@@ -1,0 +1,4 @@
+mock: true
+require_approval: false
+mock_failures: [scf]      # scf fails once with EDDDAV, to exercise recovery
+kppa_wannier: 300

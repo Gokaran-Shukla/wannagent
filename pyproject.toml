@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wannagent"
+version = "0.1.0"
+description = "AI agent and rule-based pipeline for VASP + Wannier90 workflows on SLURM clusters"
+authors = [{ name = "Gokaran Shukla" }]
+requires-python = ">=3.10"
+dependencies = ["numpy", "pymatgen", "pyyaml", "anthropic"]
+
+[project.scripts]
+wannagent = "wannagent.cli:main"
+
+[tool.setuptools]
+packages = ["wannagent"]

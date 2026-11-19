@@ -1,0 +1,20 @@
+# Cluster settings for KAUST Ibex (edit modules/paths to match your submit.sh)
+potcar_dir: /home/shuklagn/potpaw_PBE
+vasp_std: "srun vasp_std"
+vasp_ncl: "srun vasp_ncl"
+wannier90: "wannier90.x"
+vasp_version: 6
+require_approval: true
+max_resubmits: 3
+kppa_scf: 3000
+kppa_wannier: 1500
+slurm:
+  partition: batch
+  nodes: 1
+  ntasks: 40
+  time: "24:00:00"
+  mem: ""
+  modules: [intel/2022.3, intelmpi/2022.3, vasp/6.4.2, wannier90/3.1.0]
+  pre_commands: []
+  wannier_ntasks: 1
+  wannier_time: "02:00:00"
