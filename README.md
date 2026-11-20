@@ -1,5 +1,7 @@
 # wannagent
 
+📘 **Complete manual (PDF):** [docs/wannagent_manual.pdf](docs/wannagent_manual.pdf) — documentation, tutorials and quizzes in one file.
+
 An AI agent that runs the full **VASP + Wannier90** workflow on a SLURM cluster, plus a rule-based pipeline that uses the same tools without an LLM.
 
 ```
